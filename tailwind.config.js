@@ -11,7 +11,8 @@ export default {
       }
       ,
       screens: {
-        'xl':'1300px'
+        'xl':'1300px',
+        'mid':'940px'
       }
     },
 
