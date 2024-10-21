@@ -7,7 +7,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        'button': '#F9F9F5'
+        'button': '#F9F9F5',
+        'c_white': '#ecf0ff',
+        'primary':'#6EACDA',
+        'line':'#f9f9f585'
       }
       ,
       screens: {

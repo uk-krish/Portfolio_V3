@@ -2,21 +2,43 @@ import React from 'react'
 import hero_image from "../assets/hero_image2.jpg"
 
 import Scrolldown from '../components/Scrolldown';
-
+import CircleTop from '../components/CircleTop';
+import CircleBottom from '../components/CircleBottom';
+import { FaBehance, FaLinkedinIn, FaDribbble, FaGithub, FaEnvelope, FaChevronDown } from "react-icons/fa";
+import { MdOutlineFileDownload } from "react-icons/md";
+import { Link } from 'react-scroll';
 
 const Home = () => {
     return (
-        <main className="relative w-3/4 m-auto mt-52 ">
+        <main className="md:w-3/5 w-4/5 m-auto ">
+            <CircleTop />
+            <CircleBottom />
+            <section className='w-full md:my-56 my-40'>
+
             <div className='space-y-5'>
                 <p className=''>Hello, I am</p>
-                <h1 className="text-4xl lg:text-7xl text-[#ecf0ff] font-bold">Unnikrishnan C</h1>
-                <p className='font-semibold text-3xl text-[#6EACDA]'>I am a Full Stack Developer</p>
+                <h1 className="text-3xl lg:text-7xl text-c_white font-bold">Unnikrishnan C</h1>
+                <p className='font-semibold md:text-3xl text-2xl text-[#6EACDA]'>I am a Full Stack Developer</p>
                 <p>Dedicated to crafting immersive digital experiences that captivate, engage, and inspire users worldwide.</p>
-                <button className="bg-button text-black p-4 rounded-lg ">Say hello 👋</button>
             </div>
-            <div className='mt-10 md:block hidden cursor-pointer'>
+            <div>
+                <div className="text-2xl flex md:flex-row flex-col md:space-x-10   my-12 ">
+                    <button className="bg-button hover:bg-primary hover:text-button text-black p-4 flex items-center text-base max-w-max rounded-lg text-bold ">Download Resume 
+                        <MdOutlineFileDownload className='mx-2'/>
+                        </button>
+                    <section className='flex space-x-5 items-center md:mt-0 mt-7'>
+                    <div className="hover:scale-125 cursor-pointer"><FaGithub className='hover:text-primary' /></div>
+                    <div className="hover:scale-125 cursor-pointer"><FaEnvelope  className='hover:text-primary' /></div>
+                    <div className="hover:scale-125 cursor-pointer"><FaLinkedinIn className='hover:text-primary' /></div>
+                    <div className="hover:scale-125 cursor-pointer"><FaBehance  className='hover:text-primary' /></div>
+                    <div className="hover:scale-125 cursor-pointer"><FaDribbble className='hover:text-primary' /></div>
+                    </section>
+                </div>
+            </div>
+            <Link to={"about"} className='mt-10  cursor-pointer'>
                 <Scrolldown />
-            </div>
+            </Link>
+            </section>
         </main>
     )
 }

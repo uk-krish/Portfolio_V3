@@ -2,10 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
+*,
+::before,
+::after {
+  box-sizing: inherit;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 .space-mono-regular {
@@ -52,7 +54,7 @@
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #14b8a6;
+  background: #6EACDA;
 }
 
 body {
