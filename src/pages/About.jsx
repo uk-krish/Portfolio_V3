@@ -2,8 +2,8 @@ import React from 'react'
 import profile from '../assets/hero_image2.jpg'
 const About = () => {
   return (
-   <section id='about' name="about" className='flex '>
-     <div  className='lg:w-3/5  w-4/5 mx-auto mt-5'>
+   <section id='about' name="about" className='flex mt-16'>
+     <div  className='lg:w-3/5  w-4/5 mx-auto mt-32'>
       <div className='flex items-center text-center '>
         <p className='md:text-2xl w-full text-lg text-c_white font-bold'><span className='mr-1 text-primary'>01.</span> About Me</p>
       </div>

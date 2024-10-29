@@ -8,6 +8,8 @@ import About from './pages/About'
 import Skills from './pages/Skills'
 import Projects from './pages/Projects'
 import VerticalEmail from './components/VerticalEmail'
+import Contact from './components/Contact'
+import Conntect from './components/Conntect'
 function App() {
 
   return (
@@ -18,6 +20,8 @@ function App() {
       <About/>
       <Skills/>
       <Projects/>
+      <Contact/>
+      <Conntect/>
     </div>
   )
 }

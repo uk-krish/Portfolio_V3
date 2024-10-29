@@ -11,6 +11,9 @@ import Nodejs from "../assets/logo/nodejs.svg"
 import Reactjs from "../assets/logo/reactjs.svg"
 import Tailwindcss from "../assets/logo/tailwindcss.svg"
 
+import { FaBehance, FaLinkedinIn, FaDribbble, FaGithub, FaEnvelope, FaChevronDown } from "react-icons/fa";
+
+
 export const NavbarContent = [
     {
         id: 1,
@@ -32,7 +35,7 @@ export const NavbarContent = [
     ,
     {
         id: 4,
-        name: 'Hire me',
+        name: 'Contact',
         link:'contact'
     }
     ,
@@ -140,4 +143,28 @@ export const projects_List=[
         describe:"Developed a Health care landing page is built using React Js and Tailwindcss."
     }
     ,
+]
+
+export const socialMedia=[
+    {
+        id:1,
+        name:"Github",
+        username:"uk-krish",
+        link:"https://github.com/uk-krish/",
+        logo:<FaGithub/>
+    },
+    {
+        id:2,
+        name:"Email",
+        username:"uk-krish",
+        link:"unnikrishnan131100@gmail.com",
+        logo:<FaEnvelope/>
+    },
+    {
+        id:3,
+        name:"Linkedin",
+        username:"uk-krish",
+        data:"https://www.linkedin.com/in/uk-krish/",
+        logo:<FaLinkedinIn/>
+    },
 ]

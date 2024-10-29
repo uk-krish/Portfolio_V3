@@ -3,8 +3,8 @@ import { projects_List } from '../config'
 import noimage from "../assets/noimages.png"
 const Projects = () => {
     return (
-      <section id='projects' className='flex '>
-          <div className='w-4/5 mx-auto mt-24 space-y-16'>
+      <section id='projects' className='flex mt-16 '>
+          <div  className='w-4/5 mx-auto mt-32 space-y-16'>
             <div className='items-center space-y-2 text-center'>
                 <h1 className='md:text-2xl w-full text-lg text-c_white font-bold'><span className='mr-1 text-primary'>03.</span> Projects</h1>
                 <p>Some of the projects I’ve worked on</p>

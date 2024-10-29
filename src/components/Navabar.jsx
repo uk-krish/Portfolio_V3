@@ -12,7 +12,8 @@ const Navabar = () => {
   };
 
   return (
-    <div className='m-5 flex items-center justify-between'>
+   <section className='top-0 fixed backdrop-blur-3xl	 w-full z-20 bg-[#192b3886] h-max'>
+     <div className='m-3 top-0 w-full flex z-10 items-center justify-between'>
       <h1 className='ml-3 tracking-wider  space-mono-regular'>
         {'< '} <span className='aguafina-script-regular text-3xl  tracking-widest'>uk_krish</span> {'/>'}
       </h1>
@@ -44,6 +45,7 @@ const Navabar = () => {
         </div>
       </nav>
     </div>
+   </section>
   );
 };
 

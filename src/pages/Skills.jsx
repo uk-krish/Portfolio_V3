@@ -3,8 +3,8 @@ import { Tech_logo } from '../config'
 
 const Skills = () => {
     return (
-        <section id='skills' className='flex'>
-            <div className='w-3/5 mx-auto mt-16 space-y-16 '>
+        <section id='skills' className='flex mt-16'>
+            <div className='w-3/5 mx-auto mt-32 space-y-16 '>
                 <div className='items-center space-y-2 text-center'>
                     <h1 className='md:text-2xl w-full text-lg text-c_white font-bold'><span className='mr-1 text-primary'>02.</span> Tech Stacks</h1>
                     <p>Tools, Frameworks and Languages I work with</p>
