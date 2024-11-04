@@ -1,10 +1,16 @@
 import React from 'react'
 import { Tech_logo } from '../config'
+import { motion } from 'framer-motion';
+import { Common } from '../config/Varients';
 
 const Skills = () => {
     return (
         <section id='skills' className='flex mt-16'>
-            <div className='w-3/5 mx-auto mt-32 space-y-16 '>
+            <motion.div 
+                variants={Common}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.7 }} className='w-3/5 mx-auto mt-20 space-y-16 '>
                 <div className='items-center space-y-2 text-center'>
                     <h1 className='md:text-2xl w-full text-lg text-c_white font-bold'><span className='mr-1 text-primary'>02.</span> Tech Stacks</h1>
                     <p>Tools, Frameworks and Languages I work with</p>
@@ -19,7 +25,7 @@ const Skills = () => {
                         ))
                     }
                 </div>
-            </div></section>
+            </motion.div></section>
     )
 }
 

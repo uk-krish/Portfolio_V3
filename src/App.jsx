@@ -13,7 +13,7 @@ import Conntect from './components/Conntect'
 function App() {
 
   return (
-    <div className='select-none'>
+    <div  className='select-none'>
       <SocialMedia/>
       <Navabar />
       <Home/>

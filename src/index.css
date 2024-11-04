@@ -8,6 +8,7 @@
   box-sizing: inherit;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 .space-mono-regular {
@@ -51,11 +52,12 @@
 ::-webkit-scrollbar-thumb {
   background: #017bfda1;
   border-radius: 16px;
+  cursor: pointer;
 }
 
-::-webkit-scrollbar-thumb:hover {
+/* ::-webkit-scrollbar-thumb:hover {
   background: #6EACDA;
-}
+} */
 
 body {
   background: #01121f;
@@ -63,3 +65,61 @@ body {
   overflow-x: hidden;
   font-family: "Space Mono", monospace;
 }
+
+
+.pulse-center {
+  background: #66aad7;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  animation: pulse 1.5s infinite;
+  position: absolute;
+  opacity: 0.8;
+  z-index: 5;
+}
+
+.pulse-explosion {
+  content: '';
+  width: 25px;
+  height: 25px;
+  background: #66aad7;
+  border-radius: 50%;
+  position: absolute;
+  animation: pulse-radius 1.5s infinite;
+  z-index: 1;
+}
+
+@keyframes pulse {
+  30% {
+    transform: scale(0.5);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(0.75);
+    opacity: 1.0;
+  }
+  70% {
+    transform: scale(0.8);
+    opacity: 0.8;
+  }
+}
+
+@keyframes pulse-radius {
+  30% {
+    transform: scale(0.4);
+    opacity: 1;
+  }
+  40% {
+    transform: scale(5.0);
+    opacity: 0.1;
+  }
+  80% {
+    transform: scale(3.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+

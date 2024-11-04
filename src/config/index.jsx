@@ -44,58 +44,51 @@ export const NavbarContent = [
 export const Tech_logo = [
     {
         id: 1,
-        name: "Bootstrap",
-        logo: bootstrap
-    }
-    ,
+        name: "React.Js",
+        logo: Reactjs
+    },
+    {
+        id: 2,
+        name: "Javascript",
+        logo: Javascript
+    },
     {
         id: 3,
-        name: "Figma",
-        logo:Fimga
-    }
-    ,
+        name: "Nodejs",
+        logo: Nodejs
+    },
     {
         id: 4,
-        name: "Git",
-        logo:Git
-    }
-    ,
+        name: "JAVA",  
+        logo: Java
+    },
     {
         id: 5,
-        name: "HTML",
-        logo:Html
-    }
-    ,
+        name: "Tailwindcss",
+        logo: Tailwindcss
+    },
     {
         id: 6,
-        name: "JAVA",
-        logo:Java
-    }
-    ,
+        name: "Bootstrap",
+        logo: bootstrap
+    },
     {
         id: 7,
-        name: "Javascript",
-        logo:Javascript
-    }
-    ,
+        name: "HTML",
+        logo: Html
+    },
     {
         id: 8,
-        name: "Nodejs",
-        logo:Nodejs
-    }
-    ,
+        name: "Figma",
+        logo: Fimga
+    },
     {
         id: 9,
-        name: "React.Js",
-        logo:Reactjs
-    }
-    ,
-    {
-        id: 10,
-        name: "Tailwindcss",
-        logo:Tailwindcss
-    }
-]
+        name: "Git",
+        logo: Git
+    },
+];
+
 
 export const projects_List=[
     {
@@ -157,14 +150,14 @@ export const socialMedia=[
         id:2,
         name:"Email",
         username:"uk-krish",
-        link:"unnikrishnan131100@gmail.com",
+        link:"mailto:unnikrishnan131100@gmail.com",
         logo:<FaEnvelope/>
     },
     {
         id:3,
         name:"Linkedin",
         username:"uk-krish",
-        data:"https://www.linkedin.com/in/uk-krish/",
+        link:"https://www.linkedin.com/in/uk-krish/",
         logo:<FaLinkedinIn/>
     },
 ]
